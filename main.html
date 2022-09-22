@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML,CSS,Javascript" />
+    <meta name="author" content="vakho" />
+    <link rel="stylesheet" href="./main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+      integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css"
+      integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <title>Main page</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./logo.png" alt="logo" />
+        <p>COVID-19<br />Statistics</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="stats">
+        <div class="latest-report">
+          <div class="country">
+            <div class="name">Loading...</div>
+            <div class="change-country">Change</div>
+            <div class="search-country hide">
+              <div class="search-box">
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="Search Country..."
+                />
+                <img class="close" src="./close.svg" alt="closing svg" />
+              </div>
+              <div class="country-list"></div>
+            </div>
+          </div>
+          <div class="total-cases">
+            <div class="title">Total Cases</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="recovered">
+            <div class="title">Recovered</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="deaths">
+            <div class="title">Deaths</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+        </div>
+        <div class="chart">
+          <canvas id="axes_line_chart"></canvas>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="copyright">
+          <p>Copyright &copy; 2022. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script defer src="./main.js"></script>
+</html>
